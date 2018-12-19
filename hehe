@@ -1,0 +1,5 @@
+selection.Children().Each(func(i int, selection *goquery.Selection) {
+switch i {            
+     case 1:            proxy.Ip = selection.Text()            
+     case 2:            port, _ :=strconv.ParseInt(selection.Text(), 10, 64)            proxy.Port = port            
+     case 3:            proxy.Address = selection.Text()            case 9:            proxy.Check_date = selection.Text()            default:            }    })    proxy.Https =1    proxy.Status =1
